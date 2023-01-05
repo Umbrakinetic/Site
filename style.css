@@ -23,8 +23,18 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position-y: center;
-  background-position-x: center;
+  background-position-y: -270px;
+  background-position-x: 0px;
+}
+@media only screen and (max-device-width: 480px) {
+  #indexheader {
+  background-image: url('media/images/main banner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -170px;
+  background-position-x: -600px;
+  }
 }
 #artheader {
   background-image: url('media/images/artwork banner.png');
