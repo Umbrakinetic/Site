@@ -23,24 +23,21 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(150,100,200,.5);
+  background-blend-mode: multiply;
+  
   background-position-y: -270px;
   background-position-x: 0px;
 }
-@media only screen and (max-device-width: 480px) {
-  #indexheader {
-  background-image: url('media/images/main banner.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: -170px;
-  background-position-x: -600px;
-  }
-}
+
 #artheader {
   background-image: url('media/images/artwork banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(100,25,150,.5);
+  background-blend-mode: multiply;
+
   background-position-y: center;
   background-position-x: center;
 }
@@ -49,43 +46,24 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+
   background-position-y: -300px;
   background-position-x: center;
 }
-@media only screen and (max-device-width: 480px) {
-  #musicheader {
-  background-image: url('media/images/music banner.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: -180px;
-  background-position-x: center;
-  }
-}
   #commsheader {
   background-image: url('media/images/commissions banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: rgba(100,25,150,.5);
+  background-blend-mode: multiply;
+
   background-position-y: -600px;
   background-position-x: center;
 }
-@media only screen and (max-device-width: 480px) {
-  #commsheader {
-  background-image: url('media/images/commissions banner.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-y: -200px;
-  background-position-x: center;
-  }
-}
-
-
 
 .titletext {
   text-shadow: 0px 2px 5px black;
-
 }
 
 #indexheader, #artheader, #musicheader, #commsheader, #projectsheader {
@@ -94,15 +72,6 @@
 #indexheader h1, #artheader h1, #musicheader h1, #commsheader h1, #projectsheader h1{
   font-size: 80px;
 }
-@media only screen and (max-device-width: 480px) {
-  #indexheader h1, #artheader h1, #musicheader h1, #commsheader h1, #projectsheader h1{
-    font-size: 50px;
-  }
-  #indexheader p, #artheader p, #musicheader p, #commsheader p, #projectsheader p{
-    font-size: 30px;
-  }
-}
-
 
 #artlist li {
   list-style: none;
@@ -111,12 +80,6 @@
 .artimage {
   width: 30%;
   height: 30%;
-}
-@media only screen and (max-device-width: 480px) {
-  .artimage {
-  width: 100%;
-  height: 100%;
-  }
 }
 
 #albumlist li {
@@ -131,20 +94,13 @@
   width:  512px;
   height: 512px;
 }
-@media only screen and (max-device-width: 480px) {
-  .albumcover {
-  width: 100%;
-  height: 100%;
-  }
-}
 
 #tracklist {
   list-style: none;
 }
 
 .audiotrack {
-
-  width: 50%;
+  width: 80%;
 }
 
 .footerlinks {
@@ -153,6 +109,39 @@
 }
 footer i {
   padding-right: 6px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #indexheader {
+    background-position-y: -170px;
+    background-position-x: -600px;
+  }
+  #artheader {
+    background-position-y: center;
+    background-position-x: center;
+  }
+  #musicheader {
+    background-position-y: -180px;
+    background-position-x: center;
+  }
+  #commsheader {
+    background-position-y: -200px;
+    background-position-x: center;
+  }
+    #indexheader h1, #artheader h1, #musicheader h1, #commsheader h1, #projectsheader h1{
+    font-size: 50px;
+  }
+  #indexheader p, #artheader p, #musicheader p, #commsheader p, #projectsheader p{
+    font-size: 30px;
+  }
+  .artimage {
+  width: 100%;
+  height: 100%;
+  }
+  .albumcover {
+  width: 100%;
+  height: 100%;
+  }
 }
 
 /*comment*/
