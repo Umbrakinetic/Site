@@ -52,7 +52,17 @@
   background-position-y: -300px;
   background-position-x: center;
 }
-#commsheader {
+@media only screen and (max-device-width: 480px) {
+  #musicheader {
+  background-image: url('media/images/music banner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -180px;
+  background-position-x: center;
+  }
+}
+  #commsheader {
   background-image: url('media/images/commissions banner.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,10 +70,39 @@
   background-position-y: -600px;
   background-position-x: center;
 }
+@media only screen and (max-device-width: 480px) {
+  #commsheader {
+  background-image: url('media/images/commissions banner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: -200px;
+  background-position-x: center;
+  }
+}
+
+
 
 .titletext {
   text-shadow: 0px 2px 5px black;
+
 }
+
+#indexheader, #artheader, #musicheader, #commsheader, #projectsheader {
+  font-size: 50px;
+}
+#indexheader h1, #artheader h1, #musicheader h1, #commsheader h1, #projectsheader h1{
+  font-size: 80px;
+}
+@media only screen and (max-device-width: 480px) {
+  #indexheader h1, #artheader h1, #musicheader h1, #commsheader h1, #projectsheader h1{
+    font-size: 50px;
+  }
+  #indexheader p, #artheader p, #musicheader p, #commsheader p, #projectsheader p{
+    font-size: 30px;
+  }
+}
+
 
 #artlist li {
   list-style: none;
